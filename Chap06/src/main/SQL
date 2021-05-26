@@ -1,0 +1,17 @@
+
+create database o2omgr_db;
+
+CREATE TABLE `tb_course` (
+                             `id` int(11) NOT NULL AUTO_INCREMENT,
+                             `name` varchar(50) DEFAULT NULL,
+                             `count` int(11) DEFAULT NULL,
+                             `startdate` date DEFAULT NULL,
+                             `enddate` date DEFAULT NULL,
+                             `teacher` varchar(20) DEFAULT NULL,
+                             PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+INSERT INTO `tb_course` VALUES ('1', 'Java Base', '11', '2021-05-04', '2021-05-21', '张三');
+INSERT INTO `tb_course` VALUES ('2', 'Java OOP', '8', '2021-05-01', '2021-06-01', '张三');
+INSERT INTO `tb_course` VALUES ('3', 'HTML5', '8', '2021-05-08', '2021-05-18', '李四');
+INSERT INTO `tb_course` VALUES ('4', 'Java Web', '14', '2021-06-01', '2021-06-30', '王五');
+INSERT INTO `tb_course` VALUES ('5', 'Mybatis', '10', '2021-06-11', '2021-06-21', '张三');

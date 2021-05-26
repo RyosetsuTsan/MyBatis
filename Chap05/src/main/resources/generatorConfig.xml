@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!-- 配置生成器 -->
+<generatorConfiguration>
+    <context id="MysqlTables" targetRuntime="Mybatis3">
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <!-- 必须的（1 required） -->
+        <!-- 配置数据库连接信息 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/mybatisdb?characterEncoding=utf-8"
+                        userId="root"
+                        password="root"></jdbcConnection>
+        <!-- 必须的（1 required） -->
+        <!-- 配置JavaBean生成策略 -->
+        <javaModelGenerator targetPackage="com.yuki.bean" targetProject="./src/main/java"></javaModelGenerator>
+        <!-- 可选的（0 or 1） -->
+        <!-- 配置SQL映射文件mapper.xml生成策略 -->
+        <sqlMapGenerator targetPackage="com.yuki.mapper" targetProject="./src/main/java"></sqlMapGenerator>
+        <!-- 可选的（0 or 1） -->
+        <!-- 配置mapper自定义接口文件生成策略 -->
+        <javaClientGenerator targetPackage="com.yuki.mapper" targetProject="./src/main/java"
+                             type="XMLMAPPER"></javaClientGenerator>
+        <!-- 必须的（1...N） -->
+        <!-- 数据库表实体生成策略 -->
+        <!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+        <table tableName="tb_starinfo" domainObjectName="Starinfo"></table>
+
+
+    </context>
+</generatorConfiguration>

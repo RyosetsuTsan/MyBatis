@@ -1,0 +1,5 @@
+# 项目排除路径
+/Chap01/target/
+/Chap04/target/
+/Chap05/target/
+/Chap06/target/
