@@ -10,14 +10,14 @@
         <module name="MBG" />
         <module name="Chap01" />
         <module name="动态SQL" />
+        <module name="Chap02" />
         <module name="Chap03" />
-        <module name="Chap02_duobiao" />
         <module name="Mybatis_Web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Chap01" target="1.8" />
-      <module name="Chap02_duobiao" target="1.8" />
+      <module name="Chap02" target="1.8" />
       <module name="Chap03" target="1.8" />
       <module name="MBG" target="1.8" />
       <module name="MyBatis" target="1.8" />

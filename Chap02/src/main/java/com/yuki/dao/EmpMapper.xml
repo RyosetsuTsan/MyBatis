@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.yuki.dao.EmpDao">
+    <!--select查询语句-->
+    <select id="getEmpList" resultType="com.yuki.pojo.Emp">
+        select * from tb_emp
+    </select>
+    <!--模糊查询-->
+    <select id="likeEmplist" resultType="com.yuki.pojo.Emp">
+        select * from tb_emp where name like #{name}
+    </select>
+    <!--select根据id查员工 -->
+    <select id="getEmpById" parameterType="int" resultType="com.yuki.pojo.Emp">
+        select * from tb_emp where id=#{id}
+    </select>
+    <!--insert语句-->
+    <insert id="insertEmp" parameterType="com.yuki.pojo.Emp" >
+        insert into tb_emp values(null,#{name},#{gender},#{birthday},#{phone})
+    </insert>
+    <!--传递map的key-->
+    <insert id="insertEmp2" parameterType="map">
+        insert into tb_emp values(null,#{mingzi},#{xingbie},#{shengri},#{shouji})
+    </insert>
+    <!--update语句-->
+    <update id="updateEmp" parameterType="com.yuki.pojo.Emp">
+        update tb_emp set name=#{name},gender=#{gender},birthday=#{birthday},phone=#{phone} where id=#{id}
+    </update>
+    <!--delete语句-->
+    <delete id="deleteEmp" parameterType="int">
+        delete from tb_emp where id=#{id}
+    </delete>
+
+
+    <!--多表查询-->
+    <resultMap id="com.yuki.pojo.Emp" type="empMap">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="gender" property="gender"/>
+        <result column="name" property="name"/>
+        <result column="name" property="name"/>
+        <result column="name" property="name"/>
+
+        <association property="type">
+            <id column="t_id" property="tid"/>
+            <result column="t_name" property="tname"/>
+        </association>
+
+    </resultMap>
+
+    <select id="selectTypeEmp" resultMap="empMap">
+        select * from tb_emp,tb_type where tb_emp.type=tb_type.t_id;
+    </select>
+
+</mapper>

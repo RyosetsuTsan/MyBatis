@@ -1,0 +1,10 @@
+常见问题：
+标签匹配错误-- <select>标签写了insert
+resource绑定mapper，需要使用路径/而不是.
+程序配置文件必须符合规范，注意mysql地址配置最后面是否多了个"
+NullPointerException，没有注册到资源-- sqlSessionFactory重复创建了
+target输出的xml文件存在中文乱码问题！ 设置xml文件utf-8
+maven资源没有导出（resources资源未导出到target中）--在pom.xml中配置 build中配置resources，来防止资源导出失败的问题
+增删改未返回结果--增删改需要提交事务
+
+

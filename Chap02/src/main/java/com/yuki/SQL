@@ -1,0 +1,49 @@
+数据库名：hrdb
+表：
+DROP TABLE IF EXISTS `tb_emp`;
+CREATE TABLE `tb_emp` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8_bin NOT NULL,
+  `gender` varchar(50) COLLATE utf8_bin NOT NULL,
+  `birthday` varchar(50) COLLATE utf8_bin NOT NULL,
+  `phone` varchar(11) COLLATE utf8_bin NOT NULL,
+  `type` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `type` (`type`),
+  CONSTRAINT `tb_emp_ibfk_1` FOREIGN KEY (`type`) REFERENCES `tb_type` (`t_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- ----------------------------
+-- Records of tb_emp
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_emp` VALUES (1, '胡雅丽', '女', '1993-02-11', '1341567890', 2);
+INSERT INTO `tb_emp` VALUES (2, '张三', '男', '2000-12-13', '18933128205', 1);
+INSERT INTO `tb_emp` VALUES (3, '张强', '男', '2019-02-13', '18932425805', 2);
+INSERT INTO `tb_emp` VALUES (4, '李四', '女', '1999-3-1', '12323232323', 3);
+INSERT INTO `tb_emp` VALUES (13, '王五', '男', '1999-02-14', '12314161278', 3);
+INSERT INTO `tb_emp` VALUES (14, '赵六', '女', '1999-02-14', '12314161278', 3);
+INSERT INTO `tb_emp` VALUES (15, '范一开', '男', '1999-02-14', '13312345678', 3);
+COMMIT;
+
+-- ----------------------------
+-- Table structure for tb_type
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_type`;
+CREATE TABLE `tb_type` (
+  `t_id` int(11) NOT NULL AUTO_INCREMENT,
+  `t_name` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`t_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- ----------------------------
+-- Records of tb_type
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_type` VALUES (1, '总经理');
+INSERT INTO `tb_type` VALUES (2, '经理');
+INSERT INTO `tb_type` VALUES (3, '销售');
+INSERT INTO `tb_type` VALUES (4, '实习生');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
