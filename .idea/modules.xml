@@ -4,11 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chap01/Chap01.iml" filepath="$PROJECT_DIR$/Chap01/Chap01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chap02_duobiao/Chap02.iml" filepath="$PROJECT_DIR$/Chap02_duobiao/Chap02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chap03/Chap03.iml" filepath="$PROJECT_DIR$/Chap03/Chap03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chap05/MBG.iml" filepath="$PROJECT_DIR$/Chap05/MBG.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chap06/Mybatis_Web.iml" filepath="$PROJECT_DIR$/Chap06/Mybatis_Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chap03/Mybatis动态SQL.iml" filepath="$PROJECT_DIR$/Chap03/Mybatis动态SQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap03/Mybatis多表.iml" filepath="$PROJECT_DIR$/Chap03/Mybatis多表.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chap04/动态SQL.iml" filepath="$PROJECT_DIR$/Chap04/动态SQL.iml" />
     </modules>
   </component>

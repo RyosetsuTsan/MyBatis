@@ -2,7 +2,7 @@
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace绑定一个对应的Dao/Mapper接口-->
-<mapper namespace="com.yuki.dao.EmpDao">
+<mapper namespace="com.yuki.mapper.EmpDao">
     <!--select查询语句-->
     <select id="getEmpList" resultType="com.yuki.pojo.Emp">
         select * from tb_emp

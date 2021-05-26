@@ -11,18 +11,18 @@
         <module name="Chap01" />
         <module name="动态SQL" />
         <module name="Chap02" />
-        <module name="Chap03" />
+        <module name="Mybatis多表" />
         <module name="Mybatis_Web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Chap01" target="1.8" />
       <module name="Chap02" target="1.8" />
-      <module name="Chap03" target="1.8" />
       <module name="MBG" target="1.8" />
       <module name="MyBatis" target="1.8" />
       <module name="Mybatis_Web" target="1.8" />
       <module name="Mybatis动态SQL" target="1.8" />
+      <module name="Mybatis多表" target="1.8" />
       <module name="动态SQL" target="1.8" />
     </bytecodeTargetLevel>
   </component>

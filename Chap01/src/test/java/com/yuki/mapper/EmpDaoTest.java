@@ -1,4 +1,4 @@
-package com.yuki.dao;
+package com.yuki.mapper;
 
 import com.yuki.pojo.Emp;
 import com.yuki.utils.MyBatisUtils;

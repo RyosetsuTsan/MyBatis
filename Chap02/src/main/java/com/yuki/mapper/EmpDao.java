@@ -1,6 +1,7 @@
-package com.yuki.dao;
+package com.yuki.mapper;
 
 import com.yuki.pojo.Emp;
+
 import java.util.List;
 import java.util.Map;
 
