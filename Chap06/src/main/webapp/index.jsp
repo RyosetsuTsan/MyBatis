@@ -41,8 +41,8 @@
         </tr>
     </c:forEach>
     <tr>
-        <td colspan="2">一共 ${fn:length(courses)}门课程</td>
-        <td colspan="4">
+        <td colspan="3">一共 ${fn:length(courses)}门课程</td>
+        <td colspan="3">
             <!-- 多行删除方法1 form表单传递 -->
             <input type="submit" value="多行删除1">
 

@@ -59,9 +59,10 @@ public class indexService {
             //todo or条件
 //            example.or(c1);
         }
-        if (teacher!=null)c.andTeacherLike("%"+teacher+"%");
-        if (start!=null)c.andStartdateGreaterThanOrEqualTo(start);
-        if (end!=null)c.andEnddateLessThanOrEqualTo(end);
+//        if (teacher!=null)
+            c.andTeacherLike("%"+teacher+"%");
+        if (start!=null) c.andStartdateGreaterThanOrEqualTo(start);
+        if (end!=null) c.andEnddateLessThanOrEqualTo(end);
         return mapper.selectByExample(e);
 
     }

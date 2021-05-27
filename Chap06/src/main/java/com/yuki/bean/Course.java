@@ -1,5 +1,6 @@
 package com.yuki.bean;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Course {
@@ -39,16 +40,16 @@ public class Course {
         this.count = count;
     }
 
-    public Date getStartdate() {
-        return startdate;
+    public String getStartdate() {
+        return new SimpleDateFormat("yyyy-MM-dd").format(startdate);
     }
 
     public void setStartdate(Date startdate) {
         this.startdate = startdate;
     }
 
-    public Date getEnddate() {
-        return enddate;
+    public String getEnddate() {
+        return new SimpleDateFormat("yyyy-MM-dd").format(enddate);
     }
 
     public void setEnddate(Date enddate) {

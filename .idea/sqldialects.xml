@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlResolveMappings">
-    <file url="file://$PROJECT_DIR$/Chap01/src/main/java/com/yuki/dao/EmpMapper.xml" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;3f400809-ea19-4dac-b8fd-67ab245ab735&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;Hrdb&quot;      }     }    }   }  } }}" />
     <file url="file://$PROJECT_DIR$/Chap04/src/main/java/com/yuki/mapper/StarinfoMapper.xml" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;3f400809-ea19-4dac-b8fd-67ab245ab735&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;mybatisdb&quot;      }     }    }   }  } }}" />
   </component>
 </project>
